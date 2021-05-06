@@ -1,0 +1,36 @@
+#footer{
+    width: 375px;
+    height: 196px;
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-center;
+    background: #FFFFFF;
+    .title-footer{
+        font-family: "roboto";
+        font-size: 15px;
+        color: #000000;
+        letter-spacing: 0;
+        margin-top: 47px;
+    }
+    .social-networks{
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        .social-network{
+            margin: 10px;
+        }
+    }
+    .copy-right{
+        font-family: "roboto";
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-top: 38px;
+    }
+    #blueBarDown{
+        width: 375px;
+        height: 5px;
+        background-color: #572EE5;
+    }
+}

@@ -1,0 +1,57 @@
+.header{
+    #blueBar{
+        width: 375px;
+        height: 5px;
+        background-color: #572EE5;
+    }
+    #navMenu{
+        .burguer-and-logo{
+            display: flex;
+            width: 375px;
+            height: 95px;
+            justify-content: space-between;
+            align-items: center;
+            #logo-header{
+                width: 55px;
+                height: 48.8px;
+            }
+            #burguer-logo{
+                width: 15px;
+                height: 14px;
+            }
+        }
+
+        #menuContent{
+            text-align: center;
+            width: 23.44rem;
+            height: 30.25rem;
+            background-color:$back-ground-menu-desplegado ;
+            color: $menu-lettler-color;
+            font-size: $font-size-menu;
+            
+            ul{
+                padding: 17px;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    height: 3.75rem;
+
+                    a{
+                        font-family: "monserrat", sans-serif;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color:$menu-lettler-color;
+                    }
+                    .menu-item-underline{ 
+                        background-color: $menu-lettler-color;
+                        width: 41px;
+                        height: 0.1px;
+                        align-self: center;
+                        opacity: 0.5;
+                        margin-top: 16px;
+                    } 
+                }
+            }
+        }
+    }
+}

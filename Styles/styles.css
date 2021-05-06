@@ -1,0 +1,614 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header #blueBar {
+  width: 375px;
+  height: 5px;
+  background-color: #572EE5;
+}
+
+.header #navMenu .burguer-and-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 375px;
+  height: 95px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header #navMenu .burguer-and-logo #logo-header {
+  width: 55px;
+  height: 48.8px;
+}
+
+.header #navMenu .burguer-and-logo #burguer-logo {
+  width: 15px;
+  height: 14px;
+}
+
+.header #navMenu #menuContent {
+  text-align: center;
+  width: 23.44rem;
+  height: 30.25rem;
+  background-color: rgba(87, 46, 229, 0.9);
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.header #navMenu #menuContent ul {
+  padding: 17px;
+}
+
+.header #navMenu #menuContent ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 3.75rem;
+}
+
+.header #navMenu #menuContent ul li a {
+  font-family: "monserrat", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header #navMenu #menuContent ul li .menu-item-underline {
+  background-color: #FFFFFF;
+  width: 41px;
+  height: 0.1px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  opacity: 0.5;
+  margin-top: 16px;
+}
+
+#searchGifos, #searchGifosMobileHome {
+  text-align: -webkit-center;
+  width: 375px;
+}
+
+#searchGifos .main-title, #searchGifosMobileHome .main-title {
+  width: 286px;
+  height: 99px;
+  color: #572EE5;
+  font-family: "montserrat";
+  font-size: 25px;
+  text-align: center;
+  line-height: 33px;
+  font-weight: 900;
+}
+
+#searchGifos .main-title .capital-gifos, #searchGifosMobileHome .main-title .capital-gifos {
+  color: #50E3C2;
+}
+
+#searchGifos #searchContainer #search, #searchGifosMobileHome #searchContainer #search {
+  width: 334px;
+  height: 50px;
+  border: 1px solid #572EE5;
+  border-radius: 27px;
+}
+
+#searchGifos #searchContainer ::-webkit-input-placeholder, #searchGifosMobileHome #searchContainer ::-webkit-input-placeholder {
+  width: 215px;
+  height: 22px;
+}
+
+#searchGifos #searchContainer :-ms-input-placeholder, #searchGifosMobileHome #searchContainer :-ms-input-placeholder {
+  width: 215px;
+  height: 22px;
+}
+
+#searchGifos #searchContainer ::-ms-input-placeholder, #searchGifosMobileHome #searchContainer ::-ms-input-placeholder {
+  width: 215px;
+  height: 22px;
+}
+
+#searchGifos #searchContainer ::placeholder, #searchGifosMobileHome #searchContainer ::placeholder {
+  width: 215px;
+  height: 22px;
+}
+
+#searchGifos #searchContainer #btnSearch, #searchGifosMobileHome #searchContainer #btnSearch {
+  -webkit-transform: translate(-41px, 6px);
+          transform: translate(-41px, 6px);
+}
+
+#searchGifos .gifos-main-img, #searchGifosMobileHome .gifos-main-img {
+  width: 273px;
+  height: 130px;
+}
+
+#searchGifos #trending, #searchGifosMobileHome #trending {
+  width: 375px;
+  height: 150px;
+  margin-top: 31px;
+}
+
+#searchGifos #trending .trending-block, #searchGifosMobileHome #trending .trending-block {
+  width: 236px;
+  height: 25px;
+  color: #572EE5;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 25px;
+}
+
+#searchGifos #trending .trending-tags, #searchGifosMobileHome #trending .trending-tags {
+  width: 225px;
+  height: 50px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 25px;
+}
+
+#searchGifosMobileHome {
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translate(0px, -455px);
+          transform: translate(0px, -455px);
+}
+
+#favoritos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 375px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#favoritos img {
+  width: 28px;
+  height: 21px;
+}
+
+#favoritos #titleFavoritos {
+  color: #572EE5;
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 900;
+}
+
+#favoritos #btnVerMas {
+  width: 127px;
+  height: 50px;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  color: #572EE5;
+  font: "Montserrat";
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#favoritos #btnVerMas span {
+  display: block;
+  margin-top: 17px;
+}
+
+#misGifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 375px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#misGifos #imgMisGifos {
+  width: 23px;
+  height: 21px;
+}
+
+#misGifos #titleMisGifos {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 30px;
+}
+
+#misGifos #btnVerMasGifos {
+  width: 127px;
+  height: 50px;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  color: #572EE5;
+  font: "Montserrat";
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#misGifos #btnVerMasGifos span {
+  display: block;
+  margin-top: 17px;
+}
+
+#trendingGifos {
+  width: 375px;
+  height: 480px;
+  background: #F3F5F8;
+}
+
+#trendingGifos .title-trending-gifos {
+  width: 375px;
+  height: 30px;
+  margin-top: 46px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 20px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 30px;
+}
+
+#trendingGifos .paragraph-trending-gifos {
+  width: 375px;
+  height: 46px;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  line-height: 23px;
+}
+
+#trendingGifos .img-trending-gifos {
+  width: 243px;
+  height: 187px;
+  margin-top: 2rem;
+  border: 1px solid red;
+}
+
+#footer {
+  width: 375px;
+  height: 196px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: -webkit-center;
+  background: #FFFFFF;
+}
+
+#footer .title-footer {
+  font-family: "roboto";
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0;
+  margin-top: 47px;
+}
+
+#footer .social-networks {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .social-networks .social-network {
+  margin: 10px;
+}
+
+#footer .copy-right {
+  font-family: "roboto";
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: 38px;
+}
+
+#footer #blueBarDown {
+  width: 375px;
+  height: 5px;
+  background-color: #572EE5;
+}
+
+@media only screen and (min-width: 375px) {
+  #header-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header #blueBar {
+    width: 1024px;
+    height: 5px;
+    background-color: #572EE5;
+  }
+  .header #navMenu #header-desktop {
+    width: 1024px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-right: 156px;
+  }
+  .header #navMenu #header-desktop #logoHeaderDesktop {
+    width: 59.1px;
+    height: 59.1px;
+    margin-left: 156px;
+  }
+  .header #navMenu #header-desktop #menuContentDesktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header #navMenu #header-desktop #menuContentDesktop ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header #navMenu #header-desktop #menuContentDesktop ul a {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 13px;
+    color: #572EE5;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 10px;
+  }
+  .header #navMenu #header-desktop #btnCrearMas {
+    width: 54px;
+    height: 54px;
+    margin-left: 49.5px;
+  }
+  .header #navMenu .burguer-and-logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .header #blueBar {
+    width: 1440px;
+    height: 5px;
+    background-color: #572EE5;
+  }
+  .header #navMenu #header-desktop {
+    width: 1440px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header #navMenu #header-desktop #logoHeaderDesktop {
+    width: 59.1px;
+    height: 59.1px;
+    margin-left: 156px;
+  }
+  .header #navMenu #header-desktop #menuContentDesktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 156px;
+  }
+  .header #navMenu #header-desktop #menuContentDesktop ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header #navMenu #header-desktop #menuContentDesktop ul a {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 13px;
+    color: #572EE5;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 10px;
+  }
+  .header #navMenu #header-desktop #btnCrearMas {
+    width: 54px;
+    height: 54px;
+    margin-left: 49.5px;
+  }
+  .header #navMenu .burguer-and-logo {
+    display: none;
+  }
+  #favoritos {
+    width: 1440px;
+  }
+  #misGifos {
+    width: 1440px;
+  }
+  #searchGifos {
+    margin: auto;
+    width: 1440px;
+  }
+  #searchGifos .main-title {
+    width: 630px;
+    height: 100px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 35px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 50px;
+  }
+  #searchGifos .gifos-main-img {
+    width: 400px;
+    height: 190px;
+  }
+  #searchGifos #searchContainer #search {
+    width: 551px;
+  }
+  #searchGifos #trending #trending-block {
+    font-size: 18px;
+  }
+  #trendingGifos {
+    margin: auto;
+    width: 1440px;
+    height: 640px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #trendingGifos .title-trending-gifos {
+    width: 1440px;
+    font-size: 25px;
+  }
+  #trendingGifos .paragraph-trending-gifos {
+    width: 1440px;
+    height: 21px;
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    font-weight: 600;
+  }
+  #trendingGifos .paragraph-trending-gifos br {
+    display: none;
+  }
+  #trendingGifos #cardsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1440px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #trendingGifos #cardsContainer .img-trending-gifos {
+    width: 357px;
+    height: 275px;
+    margin: 10px;
+  }
+  #ContainerCrearGifos {
+    width: 1440px;
+    height: 568px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px red solid;
+  }
+  #ContainerCrearGifos #pictureOfCamera {
+    width: 220px;
+    height: 390px;
+    border: 1px black solid;
+  }
+  #ContainerCrearGifos #screenLineaBtn {
+    width: 688px;
+    height: 390px;
+    border: 1px black solid;
+  }
+  #ContainerCrearGifos #pictureOfCinta {
+    width: 220px;
+    height: 390px;
+    border: 1px black solid;
+  }
+  #footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 1440px;
+    height: 116px;
+  }
+  #footer #socialNetworksAndCopyRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 44px;
+  }
+  #footer #socialNetworksAndCopyRight .social-networks-and-compartir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #footer #socialNetworksAndCopyRight .social-networks-and-compartir .title-footer {
+    margin: 0;
+  }
+  #footer #socialNetworksAndCopyRight .social-networks-and-compartir .only-social-network .network {
+    margin: 10px;
+  }
+  #footer #socialNetworksAndCopyRight .copy-right {
+    margin: 0;
+  }
+  #footer #blueBarDown {
+    width: 1440px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

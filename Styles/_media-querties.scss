@@ -1,0 +1,248 @@
+@media only screen and (min-width: 375px){
+    #header-desktop{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px){
+    .header{
+        #blueBar{
+            width: 1024px;
+            height: 5px;
+            background-color: $titles-color;
+        }
+        #navMenu{
+            #header-desktop{
+                width: 1024px;
+                height: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-right: 156px;
+                #logoHeaderDesktop{
+                    width:59.1px;
+                    height: 59.1px;
+                    margin-left: 156px;
+                }
+                #menuContentDesktop{
+                    display: flex;
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        align-items: center;
+                        a{
+                            text-decoration: none;
+                            font-family: "Montserrat";
+                            font-weight: bold;
+                            font-size: 13px;
+                            color: $titles-color;
+                            letter-spacing: 0;
+                            text-align: center;
+                            margin: 10px;
+                        }
+                    }
+                }
+                #btnCrearMas{
+                    width: 54px;
+                    height: 54px;
+                    margin-left: 49.5px;
+                }
+            }
+            .burguer-and-logo{
+                display: none;
+            }
+    
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    body{
+        max-width: 1440px;
+        margin: auto;
+    }
+    .header{
+        #blueBar{
+            width: 1440px;
+            height: 5px;
+            background-color: $titles-color;
+        }
+        #navMenu{
+            #header-desktop{
+                width: 1440px;
+                height: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                #logoHeaderDesktop{
+                    width:59.1px;
+                    height: 59.1px;
+                    margin-left: 156px;
+                }
+                #menuContentDesktop{
+                    display: flex;
+                    margin-right: 156px;
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        align-items: center;
+                        a{
+                            text-decoration: none;
+                            font-family: "Montserrat";
+                            font-weight: bold;
+                            font-size: 13px;
+                            color: $titles-color;
+                            letter-spacing: 0;
+                            text-align: center;
+                            margin: 10px;
+                        }
+                    }
+                }
+                #btnCrearMas{
+                    width: 54px;
+                    height: 54px;
+                    margin-left: 49.5px;
+                }
+            }
+            .burguer-and-logo{
+                display: none;
+            }
+    
+        }
+    }
+
+    #favoritos{
+        width: 1440px;
+    }
+
+    #misGifos{
+        width: 1440px;
+    }
+
+    #searchGifos{
+        margin: auto;
+        width: 1440px;
+        .main-title{
+            width: 630px;
+            height: 100px;
+            font-family: "Montserrat";
+            font-weight: bold;
+            font-size: 35px;
+            color: $titles-color;
+            text-align: center;
+            line-height: 50px;
+        }
+        .gifos-main-img{
+            width: 400px;
+            height: 190px;
+        }
+        #searchContainer{
+            #search{
+                width: 551px;
+            }
+        }
+
+        #trending{
+            #trending-block{
+                font-size: 18px;
+            }
+        }
+        
+
+    }
+
+    #trendingGifos{
+        margin: auto;
+        width: 1440px;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title-trending-gifos{
+            width: 1440px;
+            font-size: 25px;
+        }
+        .paragraph-trending-gifos{
+            width: 1440px;
+            height: 21px;
+            font-family: "Roboto";
+            font-size: 18px;
+            color: #000000;
+            text-align: center;
+            font-weight: 600;
+            br{
+                display: none;
+            }
+        }
+        #cardsContainer{
+            display: flex;
+            width: 1440px;
+            justify-content: center;
+            .img-trending-gifos{
+                width: 357px;
+                height: 275px;
+                margin: 10px;
+            }
+
+        }
+    }
+
+    #ContainerCrearGifos{
+        width: 1440px;
+        height: 568px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px red solid;
+        #pictureOfCamera{
+            width: 220px;
+            height: 390px;
+            border: 1px black solid;
+        }
+        #screenLineaBtn{
+            width: 688px;
+            height: 390px;
+            border: 1px black solid;
+        }
+        #pictureOfCinta{
+            width: 220px;
+            height: 390px;
+            border: 1px black solid;
+        }
+
+    }
+
+    #footer{
+        display: flex;
+        flex-direction: column;
+        width: 1440px;
+        height: 116px;       
+        #socialNetworksAndCopyRight{
+            display: flex;
+            justify-content: space-around;
+            margin: 44px;
+            .social-networks-and-compartir{
+                .title-footer{
+                    margin: 0;
+                }
+                display: flex;
+                align-items: center;
+                .only-social-network{
+                    .network{
+                        margin: 10px;
+                    }
+                }
+            }
+            .copy-right{
+                margin: 0;
+            }
+        }
+        #blueBarDown{
+            width: 1440px;
+        }
+    }
+
+
+}
