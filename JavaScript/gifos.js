@@ -13,14 +13,13 @@ function init() {
       .then(content => {
         //  data, pagination, meta
         content.data.forEach(gifo => {
+          
+          
           let fig = document.createElement("figure");
           let img = document.createElement("img");
-          let fc = document.createElement("figcaption");
           img.src = gifo.images.downsized.url;
           img.alt = gifo.title;
-          fc.textContent = gifo.title;
           fig.appendChild(img);
-          fig.appendChild(fc);
           let out = document.querySelector(".out");
           out.insertAdjacentElement("afterbegin", fig);
           

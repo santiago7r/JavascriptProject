@@ -125,8 +125,8 @@
 }
 
 #searchGifos #searchContainer #btnSearch, #searchGifosMobileHome #searchContainer #btnSearch {
-  -webkit-transform: translate(-41px, 6px);
-          transform: translate(-41px, 6px);
+  -webkit-transform: translate(-40px, 5px);
+          transform: translate(-40px, 5px);
 }
 
 #searchGifos .gifos-main-img, #searchGifosMobileHome .gifos-main-img {
@@ -159,6 +159,26 @@
   color: #572EE5;
   text-align: center;
   line-height: 25px;
+}
+
+#searchGifos #searchContainer input {
+  text-align: -webkit-left;
+  text-align: center;
+  font-size: 16px;
+}
+
+#searchGifos #searchContainer #suggestionBox {
+  width: 551px;
+  height: 200px;
+}
+
+#searchGifos #searchContainer #suggestionBox .suggestionDiv {
+  font-family: "Roboto";
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #9CAFC3;
+  text-align: left;
+  margin: 10px;
 }
 
 #searchGifosMobileHome {
@@ -265,7 +285,6 @@
 #trendingGifos .title-trending-gifos {
   width: 375px;
   height: 30px;
-  margin-top: 46px;
   font-family: "Montserrat";
   font-weight: 800;
   font-size: 20px;
@@ -285,10 +304,14 @@
 }
 
 #trendingGifos .img-trending-gifos {
-  width: 243px;
-  height: 187px;
+  width: 357px;
+  height: 275px;
   margin-top: 2rem;
-  border: 1px solid red;
+}
+
+#trendingGifos .img-trending-gifos .img-cart {
+  width: 357px;
+  height: 275px;
 }
 
 #footer {
@@ -350,12 +373,12 @@
 
 @media only screen and (min-width: 1024px) {
   .header #blueBar {
-    width: 1024px;
+    width: 1440px;
     height: 5px;
     background-color: #572EE5;
   }
   .header #navMenu #header-desktop {
-    width: 1024px;
+    width: 1440px;
     height: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -363,9 +386,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-right: 156px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header #navMenu #header-desktop #logoHeaderDesktop {
     width: 59.1px;
@@ -376,6 +399,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: 156px;
   }
   .header #navMenu #header-desktop #menuContentDesktop ul {
     display: -webkit-box;
@@ -403,6 +427,343 @@
   }
   .header #navMenu .burguer-and-logo {
     display: none;
+  }
+  #favoritos {
+    width: 1440px;
+  }
+  #misGifos {
+    width: 1440px;
+  }
+  #searchGifos {
+    margin: auto;
+    width: 1440px;
+  }
+  #searchGifos .main-title {
+    width: 630px;
+    height: 100px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 35px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 50px;
+  }
+  #searchGifos .gifos-main-img {
+    width: 400px;
+    height: 190px;
+  }
+  #searchGifos #searchContainer #search {
+    width: 551px;
+  }
+  #searchGifos #searchContainer #suggestionBox {
+    display: none;
+  }
+  #searchGifos #trending #trending-block {
+    font-size: 18px;
+  }
+  #searchGifos .out {
+    display: none;
+    margin-top: 1rem;
+    -ms-grid-columns: 260px 260px 260px 260px;
+        grid-template-columns: 260px 260px 260px 260px;
+    -ms-grid-rows: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+    grid-gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #searchGifos .out figure img {
+    width: 260px;
+    height: 200px;
+  }
+  #trendingGifos {
+    margin: auto;
+    width: 1440px;
+    height: 640px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #trendingGifos .title-trending-gifos {
+    width: 1440px;
+    font-size: 25px;
+  }
+  #trendingGifos .paragraph-trending-gifos {
+    width: 1440px;
+    height: 21px;
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    font-weight: 600;
+  }
+  #trendingGifos .paragraph-trending-gifos br {
+    display: none;
+  }
+  #trendingGifos #cardsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1440px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 53px;
+  }
+  #trendingGifos #cardsContainer .img-trending-gifos {
+    width: 357px;
+    height: 275px;
+    margin: 10px;
+  }
+  #trendingGifos #cardsContainer .slide-left {
+    margin-right: 15px;
+  }
+  #trendingGifos #cardsContainer .slide-right {
+    margin-left: 15px;
+  }
+  #ContainerCrearGifos {
+    width: 1440px;
+    height: 660px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: -webkit-center;
+  }
+  #ContainerCrearGifos #pictureOfCamera {
+    width: 123px;
+    height: 162px;
+    -webkit-transform: translate(111px, -69px);
+            transform: translate(111px, -69px);
+  }
+  #ContainerCrearGifos .camera-light {
+    width: 91px;
+    height: 151px;
+    -webkit-transform: translate(111px, -67px);
+            transform: translate(111px, -67px);
+  }
+  #ContainerCrearGifos #screenLineAndBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen {
+    width: 688px;
+    height: 390px;
+    border: 1px solid #572EE5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxOne {
+    width: 668px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxOne .leftUp {
+    width: 27px;
+    height: 25px;
+    border: 1px solid #50E3C2;
+    border-right: none;
+    border-bottom: none;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxOne .rightUp {
+    width: 27px;
+    height: 25px;
+    border: 1px solid #50E3C2;
+    border-left: none;
+    border-bottom: none;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBosTwo {
+    width: 668px;
+    height: 70px;
+    font-family: "Montserrat";
+    font-size: 25px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBosTwo .gifosCreateGif {
+    display: inline-block;
+    color: #50E3C2;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxThree {
+    width: 668px;
+    height: 135px;
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    line-height: 29px;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxFour {
+    width: 668px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxFour .leftDown {
+    width: 25px;
+    height: 27px;
+    border: 1px solid #50E3C2;
+    border-top: none;
+    border-right: none;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxFour .rightDown {
+    width: 25px;
+    height: 27px;
+    border: 1px solid #50E3C2;
+    border-top: none;
+    border-left: none;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns {
+    width: 900px;
+    height: 150px;
+    margin-top: 15px;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns .stepsCreateGif {
+    width: 688px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns .stepsCreateGif .steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #572EE5;
+    border-radius: 100%;
+    margin: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "roboto";
+    color: #572EE5;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns #lineCreateGif {
+    width: 795px;
+    height: 6.9px;
+    background-color: #572EE5;
+    border-radius: 25px;
+    margin-top: 19px;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns #btnCreateGif {
+    width: 127px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #572EE5;
+    background-color: white;
+    margin-top: 20px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 13px;
+    color: #572EE5;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  #ContainerCrearGifos #pictureOfCinta {
+    width: 142px;
+    height: 88px;
+    -webkit-transform: translate(-39px, 146px);
+            transform: translate(-39px, 146px);
+  }
+  #footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 1440px;
+    height: 116px;
+  }
+  #footer #socialNetworksAndCopyRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 44px;
+  }
+  #footer #socialNetworksAndCopyRight .social-networks-and-compartir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #footer #socialNetworksAndCopyRight .social-networks-and-compartir .title-footer {
+    margin: 0;
+  }
+  #footer #socialNetworksAndCopyRight .social-networks-and-compartir .only-social-network .network {
+    margin: 10px;
+  }
+  #footer #socialNetworksAndCopyRight .copy-right {
+    margin: 0;
+  }
+  #footer #blueBarDown {
+    width: 1440px;
+    height: 7px;
   }
 }
 
@@ -494,8 +855,27 @@
   #searchGifos #searchContainer #search {
     width: 551px;
   }
+  #searchGifos #searchContainer #suggestionBox {
+    display: none;
+  }
   #searchGifos #trending #trending-block {
     font-size: 18px;
+  }
+  #searchGifos .out {
+    display: none;
+    margin-top: 1rem;
+    -ms-grid-columns: 260px 260px 260px 260px;
+        grid-template-columns: 260px 260px 260px 260px;
+    -ms-grid-rows: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+    grid-gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #searchGifos .out figure img {
+    width: 260px;
+    height: 200px;
   }
   #trendingGifos {
     margin: auto;
@@ -536,15 +916,22 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 53px;
   }
   #trendingGifos #cardsContainer .img-trending-gifos {
     width: 357px;
     height: 275px;
     margin: 10px;
   }
+  #trendingGifos #cardsContainer .slide-left {
+    margin-right: 15px;
+  }
+  #trendingGifos #cardsContainer .slide-right {
+    margin-left: 15px;
+  }
   #ContainerCrearGifos {
     width: 1440px;
-    height: 568px;
+    height: 660px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -554,22 +941,189 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 1px red solid;
+    text-align: -webkit-center;
   }
   #ContainerCrearGifos #pictureOfCamera {
-    width: 220px;
-    height: 390px;
-    border: 1px black solid;
+    width: 123px;
+    height: 162px;
+    -webkit-transform: translate(111px, -69px);
+            transform: translate(111px, -69px);
   }
-  #ContainerCrearGifos #screenLineaBtn {
+  #ContainerCrearGifos .camera-light {
+    width: 91px;
+    height: 151px;
+    -webkit-transform: translate(111px, -67px);
+            transform: translate(111px, -67px);
+  }
+  #ContainerCrearGifos #screenLineAndBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen {
     width: 688px;
     height: 390px;
-    border: 1px black solid;
+    border: 1px solid #572EE5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxOne {
+    width: 668px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxOne .leftUp {
+    width: 27px;
+    height: 25px;
+    border: 1px solid #50E3C2;
+    border-right: none;
+    border-bottom: none;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxOne .rightUp {
+    width: 27px;
+    height: 25px;
+    border: 1px solid #50E3C2;
+    border-left: none;
+    border-bottom: none;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBosTwo {
+    width: 668px;
+    height: 70px;
+    font-family: "Montserrat";
+    font-size: 25px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBosTwo .gifosCreateGif {
+    display: inline-block;
+    color: #50E3C2;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxThree {
+    width: 668px;
+    height: 135px;
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    line-height: 29px;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxFour {
+    width: 668px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxFour .leftDown {
+    width: 25px;
+    height: 27px;
+    border: 1px solid #50E3C2;
+    border-top: none;
+    border-right: none;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #screen .screenBoxFour .rightDown {
+    width: 25px;
+    height: 27px;
+    border: 1px solid #50E3C2;
+    border-top: none;
+    border-left: none;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns {
+    width: 900px;
+    height: 150px;
+    margin-top: 15px;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns .stepsCreateGif {
+    width: 688px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns .stepsCreateGif .steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #572EE5;
+    border-radius: 100%;
+    margin: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "roboto";
+    color: #572EE5;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns #lineCreateGif {
+    width: 795px;
+    height: 6.9px;
+    background-color: #572EE5;
+    border-radius: 25px;
+    margin-top: 19px;
+  }
+  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns #btnCreateGif {
+    width: 127px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #572EE5;
+    background-color: white;
+    margin-top: 20px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 13px;
+    color: #572EE5;
+    letter-spacing: 0;
+    text-align: center;
   }
   #ContainerCrearGifos #pictureOfCinta {
-    width: 220px;
-    height: 390px;
-    border: 1px black solid;
+    width: 142px;
+    height: 88px;
+    -webkit-transform: translate(-39px, 146px);
+            transform: translate(-39px, 146px);
   }
   #footer {
     display: -webkit-box;
@@ -609,6 +1163,7 @@
   }
   #footer #blueBarDown {
     width: 1440px;
+    height: 7px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

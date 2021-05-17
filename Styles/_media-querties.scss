@@ -7,20 +7,20 @@
 
 
 @media only screen and (min-width: 1024px){
+
     .header{
         #blueBar{
-            width: 1024px;
+            width: 1440px;
             height: 5px;
             background-color: $titles-color;
         }
         #navMenu{
             #header-desktop{
-                width: 1024px;
+                width: 1440px;
                 height: 90px;
                 display: flex;
                 align-items: center;
-                justify-content: space-around;
-                margin-right: 156px;
+                justify-content: space-between;
                 #logoHeaderDesktop{
                     width:59.1px;
                     height: 59.1px;
@@ -28,6 +28,7 @@
                 }
                 #menuContentDesktop{
                     display: flex;
+                    margin-right: 156px;
                     ul{
                         display: flex;
                         list-style: none;
@@ -56,6 +57,299 @@
     
         }
     }
+
+    #favoritos{
+        width: 1440px;
+    }
+
+    #misGifos{
+        width: 1440px;
+    }
+
+    #searchGifos{
+        margin: auto;
+        width: 1440px;
+        .main-title{
+            width: 630px;
+            height: 100px;
+            font-family: "Montserrat";
+            font-weight: bold;
+            font-size: 35px;
+            color: $titles-color;
+            text-align: center;
+            line-height: 50px;
+        }
+        .gifos-main-img{
+            width: 400px;
+            height: 190px;
+        }
+        #searchContainer{
+            #search{
+                width: 551px;
+            }
+
+            #suggestionBox{
+                display: none;
+            }
+        }
+
+        #trending{
+            #trending-block{
+                font-size: 18px;
+            }
+        }
+
+        .out{
+            display: none;
+            margin-top: 1rem;     
+            grid-template-columns: 260px 260px 260px 260px;
+            grid-template-rows: 200px 200px 200px;
+            grid-gap: 30px;
+            justify-content: center;
+            figure{
+
+                img{
+                    width: 260px;
+                    height: 200px;
+
+                }
+            }
+        }
+        
+
+    }
+
+    #trendingGifos{
+        margin: auto;
+        width: 1440px;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title-trending-gifos{
+            width: 1440px;
+            font-size: 25px;
+        }
+        .paragraph-trending-gifos{
+            width: 1440px;
+            height: 21px;
+            font-family: "Roboto";
+            font-size: 18px;
+            color: #000000;
+            text-align: center;
+            font-weight: 600;
+            br{
+                display: none;
+            }
+        }
+        #cardsContainer{
+            display: flex;
+            width: 1440px;
+            justify-content: center;
+            margin-top: 53px;
+            .img-trending-gifos{
+                width: 357px;
+                height: 275px;
+                margin: 10px;
+            }
+            .slide-left{
+                margin-right: 15px;
+            }
+            .slide-right{
+                margin-left: 15px;
+            }
+
+        }
+    }
+
+    #ContainerCrearGifos{
+        width: 1440px;
+        height: 660px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: -webkit-center;
+        #pictureOfCamera{
+            width: 123px;
+            height: 162px;
+            transform: translate(111px, -69px);
+        }
+        .camera-light{
+            width: 91px;
+            height: 151px;
+            transform: translate(111px, -67px);
+        }
+        #screenLineAndBtn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            #screen{
+                width: 688px;
+                height: 390px;
+                border: 1px solid $burguer-menu-lines;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                span{
+                    display: flex;
+                }
+                .screenBoxOne{
+                    width: 668px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .leftUp{
+                        width: 27px;
+                        height: 25px;
+                        border: 1px solid $screen-border-color;
+                        border-right: none;
+                        border-bottom: none;
+                    }
+                    .rightUp{
+                        width: 27px;
+                        height: 25px;
+                        border: 1px solid $screen-border-color;
+                        border-left: none;
+                        border-bottom: none;
+                    }
+
+                }
+                .screenBosTwo{
+                    width: 668px;
+                    height: 70px;
+                    font-family: "Montserrat";
+                    font-size: 25px;
+                    color: $burguer-menu-lines;
+                    text-align: center;
+                    line-height: 35px;
+                    font-weight: bold;
+                    .gifosCreateGif{
+                        display: inline-block;
+                        color: $screen-border-color;
+                    }
+                }
+                .screenBoxThree{
+                    width: 668px;
+                    height: 135px;
+                    font-family: "Roboto";
+                    font-size: 16px;
+                    color: #000000;
+                    text-align: center;
+                    line-height: 29px;
+                }
+                .screenBoxFour{
+                    width: 668px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    .leftDown{
+                        width: 25px;
+                        height: 27px;
+                        border: 1px solid $screen-border-color;
+                        border-top: none;
+                        border-right: none;
+                    }
+                    .rightDown{
+                        width: 25px;
+                        height: 27px;
+                        border: 1px solid $screen-border-color;
+                        border-top: none;
+                        border-left: none;
+                    }
+
+                }
+
+            }
+            #stepsLineAndBtns{ 
+                width: 900px;
+                height: 150px;
+                margin-top: 15px;
+                .stepsCreateGif{
+                    width: 688px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .steps{ 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        border: 1px solid $burguer-menu-lines;
+                        border-radius: 100%;
+                        margin: 26px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        font-family: "roboto";
+                        color: $burguer-menu-lines;
+                    }
+                }
+                #lineCreateGif{ 
+                    width: 795px;
+                    height: 6.9px;
+                    background-color: $burguer-menu-lines;
+                    border-radius: 25px;
+                    margin-top: 19px;
+                }
+                #btnCreateGif{
+                    width: 127px;
+                    height: 50px;
+                    border-radius: 25px;
+                    border: 1px solid $burguer-menu-lines;
+                    background-color: white;
+                    margin-top: 20px;
+                    font-family: "Montserrat";
+                    font-weight: bold;
+                    font-size: 13px;
+                    color: $burguer-menu-lines;
+                    letter-spacing: 0;
+                    text-align: center;
+                }
+            }
+        }
+        #pictureOfCinta{ 
+            width: 142px;
+            height: 88px;
+            transform: translate(-39px, 146px);
+        }
+
+    }
+
+    #footer{
+        display: flex;
+        flex-direction: column;
+        width: 1440px;
+        height: 116px;       
+        #socialNetworksAndCopyRight{
+            display: flex;
+            justify-content: space-around;
+            margin: 44px;
+            .social-networks-and-compartir{
+                .title-footer{
+                    margin: 0;
+                }
+                display: flex;
+                align-items: center;
+                .only-social-network{
+                    .network{
+                        margin: 10px;
+                    }
+                }
+            }
+            .copy-right{
+                margin: 0;
+            }
+        }
+        #blueBarDown{
+            width: 1440px;
+            height: 7px;
+        }
+    }
+
 }
 
 @media only screen and (min-width: 1440px){
@@ -142,11 +436,32 @@
             #search{
                 width: 551px;
             }
+
+            #suggestionBox{
+                display: none;
+            }
         }
 
         #trending{
             #trending-block{
                 font-size: 18px;
+            }
+        }
+
+        .out{
+            display: none;
+            margin-top: 1rem;     
+            grid-template-columns: 260px 260px 260px 260px;
+            grid-template-rows: 200px 200px 200px;
+            grid-gap: 30px;
+            justify-content: center;
+            figure{
+
+                img{
+                    width: 260px;
+                    height: 200px;
+
+                }
             }
         }
         
@@ -180,10 +495,17 @@
             display: flex;
             width: 1440px;
             justify-content: center;
+            margin-top: 53px;
             .img-trending-gifos{
                 width: 357px;
                 height: 275px;
                 margin: 10px;
+            }
+            .slide-left{
+                margin-right: 15px;
+            }
+            .slide-right{
+                margin-left: 15px;
             }
 
         }
@@ -191,25 +513,157 @@
 
     #ContainerCrearGifos{
         width: 1440px;
-        height: 568px;
+        height: 660px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px red solid;
+        text-align: -webkit-center;
         #pictureOfCamera{
-            width: 220px;
-            height: 390px;
-            border: 1px black solid;
+            width: 123px;
+            height: 162px;
+            transform: translate(111px, -69px);
         }
-        #screenLineaBtn{
-            width: 688px;
-            height: 390px;
-            border: 1px black solid;
+        .camera-light{
+            width: 91px;
+            height: 151px;
+            transform: translate(111px, -67px);
         }
-        #pictureOfCinta{
-            width: 220px;
-            height: 390px;
-            border: 1px black solid;
+        #screenLineAndBtn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            #screen{
+                width: 688px;
+                height: 390px;
+                border: 1px solid $burguer-menu-lines;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                span{
+                    display: flex;
+                }
+                .screenBoxOne{
+                    width: 668px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .leftUp{
+                        width: 27px;
+                        height: 25px;
+                        border: 1px solid $screen-border-color;
+                        border-right: none;
+                        border-bottom: none;
+                    }
+                    .rightUp{
+                        width: 27px;
+                        height: 25px;
+                        border: 1px solid $screen-border-color;
+                        border-left: none;
+                        border-bottom: none;
+                    }
+
+                }
+                .screenBosTwo{
+                    width: 668px;
+                    height: 70px;
+                    font-family: "Montserrat";
+                    font-size: 25px;
+                    color: $burguer-menu-lines;
+                    text-align: center;
+                    line-height: 35px;
+                    font-weight: bold;
+                    .gifosCreateGif{
+                        display: inline-block;
+                        color: $screen-border-color;
+                    }
+                }
+                .screenBoxThree{
+                    width: 668px;
+                    height: 135px;
+                    font-family: "Roboto";
+                    font-size: 16px;
+                    color: #000000;
+                    text-align: center;
+                    line-height: 29px;
+                }
+                .screenBoxFour{
+                    width: 668px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    .leftDown{
+                        width: 25px;
+                        height: 27px;
+                        border: 1px solid $screen-border-color;
+                        border-top: none;
+                        border-right: none;
+                    }
+                    .rightDown{
+                        width: 25px;
+                        height: 27px;
+                        border: 1px solid $screen-border-color;
+                        border-top: none;
+                        border-left: none;
+                    }
+
+                }
+
+            }
+            #stepsLineAndBtns{ 
+                width: 900px;
+                height: 150px;
+                margin-top: 15px;
+                .stepsCreateGif{
+                    width: 688px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .steps{ 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        border: 1px solid $burguer-menu-lines;
+                        border-radius: 100%;
+                        margin: 26px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        font-family: "roboto";
+                        color: $burguer-menu-lines;
+                    }
+                }
+                #lineCreateGif{ 
+                    width: 795px;
+                    height: 6.9px;
+                    background-color: $burguer-menu-lines;
+                    border-radius: 25px;
+                    margin-top: 19px;
+                }
+                #btnCreateGif{
+                    width: 127px;
+                    height: 50px;
+                    border-radius: 25px;
+                    border: 1px solid $burguer-menu-lines;
+                    background-color: white;
+                    margin-top: 20px;
+                    font-family: "Montserrat";
+                    font-weight: bold;
+                    font-size: 13px;
+                    color: $burguer-menu-lines;
+                    letter-spacing: 0;
+                    text-align: center;
+                }
+            }
+        }
+        #pictureOfCinta{ 
+            width: 142px;
+            height: 88px;
+            transform: translate(-39px, 146px);
         }
 
     }
@@ -241,6 +695,7 @@
         }
         #blueBarDown{
             width: 1440px;
+            height: 7px;
         }
     }
 

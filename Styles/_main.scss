@@ -15,6 +15,7 @@
         }
     }
     #searchContainer{
+        
         #search{
             width: 334px;
             height: 50px;
@@ -26,7 +27,7 @@
             height: 22px;
         }
         #btnSearch{
-            transform: translate(-41px, 6px);
+            transform: translate(-40px, 5px);
         }
     }
     .gifos-main-img{
@@ -60,6 +61,30 @@
 }
 #searchGifos{
     @extend %styles-main;
+    #searchContainer{
+        // width: 551px;
+        // height: 200px;
+        // border: 1px solid $burguer-menu-lines;
+        // border-radius: 25px;
+        input{
+            text-align: -webkit-left;
+            text-align: center;
+            font-size: 16px;
+        }
+        #suggestionBox{
+            width: 551px;
+            height: 200px;
+            .suggestionDiv{
+                font-family: "Roboto";
+                font-size: 16px;
+                text-transform:capitalize;
+                color: $suggestions-color;
+                text-align: left;
+                margin: 10px;
+            }
+        }
+
+    }
 }
 #searchGifosMobileHome{
     @extend %styles-main;
@@ -138,7 +163,6 @@
     .title-trending-gifos{
         width: 375px;
         height: 30px;
-        margin-top: 46px;
         font-family: "Montserrat";
         font-weight: 800;
         font-size: 20px;
@@ -156,10 +180,14 @@
         line-height: 23px;
     }
     .img-trending-gifos{
-        width: 243px;
-        height: 187px;
+        width: 357px;
+        height: 275px;
         margin-top: 2rem;
-        border: 1px solid red;
+        .img-cart{
+            width: 357px;
+            height: 275px;
+        }
 
     }
+    
 }

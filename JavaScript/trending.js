@@ -1,15 +1,42 @@
 
+const APIKEYTRENDING = "KtTod9sp8K9SJa6zIX0lrTmLeNt83TVL";
+
+const url = `https://api.giphy.com/v1/trending/searches?api_key=${APIKEYTRENDING}`;
 
 
-const APIKEY = "KtTod9sp8K9SJa6zIX0lrTmLeNt83TVL";
-const url = `https://api.giphy.com/v1/gifs/trending?api_key=${APIKEY}&limit=5`;
 
 
-fetch(url).then(function(response){
-        return response.json()
-        }).then(function(json){
-            console.log(json);
+async function bringGifs (gifs){
+    return ((await fetch(url)).json());
+}
 
-        }).catch(function (err) {
-             console.log(err.message)
-})
+document.addEventListener("DOMContentLoaded", async()=>{
+    let trendings = [];
+
+
+    try{
+
+        trendings = await bringGifs();
+    
+    }catch(e) {
+        console.log(e);
+    }
+
+    console.log(trendings);
+
+    function elementosTrending(){
+
+        for (i = 0; i < 5; i++) {
+            const trendingsInHTML = document.querySelector("#hereTheTrending");
+            const elementSpan = document.createElement("span");
+            elementSpan.classList.add("trending-tags");
+            elementSpan.innerText = `${trendings.data[i]}, `;
+            trendingsInHTML.appendChild(elementSpan);
+        }
+
+    }
+
+    elementosTrending();
+
+});
+

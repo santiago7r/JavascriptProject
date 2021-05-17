@@ -8,9 +8,11 @@ searchContainer.addEventListener("keyup", function(event){
 
 })
 
+
+
 function suggestionFunction (term){
     const APIKEYAUTO = "KtTod9sp8K9SJa6zIX0lrTmLeNt83TVL";
-    const url = `https://api.giphy.com/v1/tags/related/${term}?api_key=${APIKEYAUTO}`;
+    const url = `https://api.giphy.com/v1/tags/related/${term}?api_key=${APIKEYAUTO}&limit=4`;
     
     fetch(url).then(function(response){
         return response.json()
