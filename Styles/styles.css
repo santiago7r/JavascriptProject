@@ -918,10 +918,45 @@
             justify-content: center;
     margin-top: 53px;
   }
-  #trendingGifos #cardsContainer .img-trending-gifos {
+  #trendingGifos #cardsContainer .carts-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1080px;
+    overflow: hidden;
+    border: 2px solid red;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #trendingGifos #cardsContainer .carts-wrapper .img-trending-gifos {
+    position: relative;
     width: 357px;
     height: 275px;
-    margin: 10px;
+  }
+  #trendingGifos #cardsContainer .carts-wrapper .img-trending-gifos .img-cart {
+    position: absolute;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  #trendingGifos #cardsContainer .carts-wrapper .img-trending-gifos .img-cart.next + .img-cart {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  #trendingGifos #cardsContainer .carts-wrapper .img-trending-gifos .img-cart.prev {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  #trendingGifos #cardsContainer .carts-wrapper .img-trending-gifos .img-cart.current {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #trendingGifos #cardsContainer .carts-wrapper .img-trending-gifos .img-cart.next {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   #trendingGifos #cardsContainer .slide-left {
     margin-right: 15px;

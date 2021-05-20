@@ -1,7 +1,7 @@
 
 const APIKEYTRENDINGSLIDER = "KtTod9sp8K9SJa6zIX0lrTmLeNt83TVL";
 
-const urlTrendingSlider = `https://api.giphy.com/v1/gifs/trending?api_key=${APIKEYTRENDINGSLIDER}&limit=3`;
+const urlTrendingSlider = `https://api.giphy.com/v1/gifs/trending?api_key=${APIKEYTRENDINGSLIDER}&limit=9`;
 
 
 async function bringImgsGifs (gifs){
@@ -21,27 +21,39 @@ document.addEventListener("DOMContentLoaded", async()=>{
 
     }
 
-    console.log(trendingImgs.data[0].images.fixed_width.url);
+
 
     function trendingImgsSlider(){
 
         const cartsContainer = document.querySelector("#cardsContainer");
 
-        for(i=0; i<3; i++){
+        const cartsWrapper = document.createElement("div");
+        cartsWrapper.classList.add("carts-wrapper");
+        cartsContainer.appendChild(cartsWrapper);
+
+
+        const cart         = document.createElement("div");
+        cart.classList.add("img-trending-gifos");
+
+        for(i=0; i<9; i++){
             
 
-            console.log(cartsContainer);
-
-            const cart         = document.createElement("div");
+            
             const imgCart      = document.createElement("img");
             imgCart.classList.add("img-cart");
-            cart.classList.add("img-trending-gifos");
-            cartsContainer.appendChild(cart);
-            cart.appendChild(imgCart);
+            
             imgCart.src = trendingImgs.data[i].images.fixed_width.url;
-            console.log(trendingImgs.data[i].images.fixed_width.url);
+            cartsWrapper.appendChild(cart);
+            cart.appendChild(imgCart);
 
         }
+
+        let elementsWrapper = document.querySelector('.img-trending-gifos').childNodes;
+        // elementsWrapper[3].classList.add("prev");
+        elementsWrapper[4].classList.add("current");
+        // elementsWrapper[5].classList.add("next");
+
+
         const slideLeft = document.createElement("img");
         slideLeft.classList.add("slide-left");
         slideLeft.src = './assets/button-slider-left.svg';
@@ -53,48 +65,80 @@ document.addEventListener("DOMContentLoaded", async()=>{
         cartsContainer.insertAdjacentElement('afterbegin', slideLeft);
         cartsContainer.insertAdjacentElement('beforeend', slideRight);
 
-
-
-
-
     }
-
     trendingImgsSlider();
+
+
+    function Slider (slider){
+        
+        if (!(slider instanceof Element)){ 
+            throw new Error("No hace parte del slider");
+        }
+
+        let prev;
+        let current;
+        let next;
+
+        const slides = slider.querySelector('.img-trending-gifos');
+
+        
+        const prevButton = document.querySelector('.slide-left');
+        const nextButton = document.querySelector('.slide-right');
+
+        function startSlider(){
+            current = slider.querySelector('.current') || slides.firstElementChild;
+            prev = current.previousElementSibling || slides.lastElementChild;
+            next = current.nextElementSibling || slides.firstElementChild;
+            console.log({ current, prev, next });
+
+        }
+
+        function applyClasses() {
+            current.classList.add('current');
+            prev.classList.add('prev');
+            next.classList.add('next');
+          }
+        
+          function move(direction) {
+            // first strip all the classes off the current slides
+            const classesToRemove = ['prev', 'current', 'next'];
+            prev.classList.remove(...classesToRemove);
+            current.classList.remove(...classesToRemove);
+            next.classList.remove(...classesToRemove);
+            if (direction === 'back') {
+              // make an new array of the new values, and destructure them over and into the prev, current and next variables
+              [prev, current, next] = [
+                // get the prev slide, if there is none, get the last slide from the entire slider for wrapping
+                prev.previousElementSibling || slides.lastElementChild,
+                prev,
+                current,
+              ];
+            } else {
+              [prev, current, next] = [
+                current,
+                next,
+                // get the next slide, or if it's at the end, loop around and grab the first slide
+                next.nextElementSibling || slides.firstElementChild,
+              ];
+            }
+        
+            applyClasses();
+        }
+
+        startSlider();
+        applyClasses();
+
+        nextButton.addEventListener('click', () => move('back'));
+        prevButton.addEventListener('click', move);
+
+        
+    } 
+    
+    const mySlider = Slider(document.querySelector('.carts-wrapper'));
 
 
 });
 
 
 
-
-
-// document.addEventListener("DOMContentLoaded", async()=>{
-//     let trendings = [];
-
-
-//     try{
-
-//         trendings = await bringGifs();
-    
-//     }catch(e) {
-//         console.log(e);
-//     }
-
-//     console.log(trendings.data[0].images.fixed_width.url);
-
-//     function elementosTrending(){
-
-//         for (i = 0; i < 5; i++) {
-//             const trendingsInHTML = document.querySelector("#hereTheTrending");
-//             const elementSpan = document.createElement("span");
-//             elementSpan.classList.add("trending-tags");
-//             elementSpan.innerText = `${trendings.data[i]}, `;
-//             trendingsInHTML.appendChild(elementSpan);
-//         }
-
-//     }
-
-//     elementosTrending();
-
-// });
 
