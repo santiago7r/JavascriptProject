@@ -26,17 +26,21 @@ document.addEventListener("DOMContentLoaded", async()=>{
 
     function elementosTrending(){
 
+        const trendingsInHTML = document.querySelector("#hereTheTrending");
+
         for (i = 0; i < 5; i++) {
-            const trendingsInHTML = document.querySelector("#hereTheTrending");
             const elementSpan = document.createElement("span");
             elementSpan.classList.add("trending-tags");
-            elementSpan.innerText = `${trendings.data[i]}, `;
+            elementSpan.innerText = `${trendings.data[i]}${i == 4 ? "" : ','} `;
             trendingsInHTML.appendChild(elementSpan);
+            
+            
         }
 
     }
-
+    
     elementosTrending();
-
+    
+    
 });
 

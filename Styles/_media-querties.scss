@@ -435,6 +435,26 @@
         #searchContainer{
             #search{
                 width: 551px;
+                height: 50px;
+                outline: none;
+                text-align: justify;
+                padding: 25px;
+                text-transform: capitalize;
+            }
+
+
+            #search::-webkit-input-placeholder{
+                padding-left: 40px;
+            }
+
+            #search::-webkit-search-cancel-button{
+                position:relative;
+                right:20px;  
+            
+                -webkit-appearance: auto;
+                height: 14px;
+                width: 14px;
+                background: red;
             }
 
             #suggestionBox{
@@ -501,7 +521,6 @@
                 display: flex;
                 width: 1080px;
                 overflow: hidden;
-                border: 2px solid red;
                 justify-content: center;
                 
 
@@ -512,12 +531,54 @@
 
 
                     .img-cart{
+                        display: flex;
                         position: absolute;
                         padding: 10px;
                         // display: grid;
                         height: 100%;
                         width: 100%;
                         transform: translateX(-200%);
+                        .img-url{
+                            height: 100%;
+                            width: 100%;
+                            position: relative;
+                        }
+                        .overlay{
+                            width: 337px;
+                            height: 255px;
+                            background-color: $burguer-menu-lines;
+                            position: absolute;
+                            text-align: end;
+                            opacity: 0;
+
+                            .fav-icon{
+                                opacity: 0.5;
+                                &:hover{
+                                    opacity: 1;
+                                }
+                            }
+                            
+                            .download-icon{
+                                opacity: 0.5;
+                                &:hover{
+                                    opacity: 1;
+                                }
+                            }
+
+                            .max-icon{
+                                opacity: 0.5;
+                                &:hover{
+                                    opacity: 1;
+                                }
+                            }
+
+                            img{
+                                margin: 5px;
+                            }
+                            &:hover{
+                                opacity: 0.5;
+                            }
+                        }
                     }
 
                     .img-cart.next + .img-cart {
