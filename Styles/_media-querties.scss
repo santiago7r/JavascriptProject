@@ -8,15 +8,19 @@
 
 @media only screen and (min-width: 1024px){
 
+    body{
+        max-width: 1024px;
+        margin: auto;
+    }
     .header{
         #blueBar{
-            width: 1440px;
+            width: 1024px;
             height: 5px;
             background-color: $titles-color;
         }
         #navMenu{
             #header-desktop{
-                width: 1440px;
+                width: 1024px;
                 height: 90px;
                 display: flex;
                 align-items: center;
@@ -59,16 +63,16 @@
     }
 
     #favoritos{
-        width: 1440px;
+        width: 1024px;
     }
 
     #misGifos{
-        width: 1440px;
+        width: 1024px;
     }
 
     #searchGifos{
         margin: auto;
-        width: 1440px;
+        width: 1024px;
         .main-title{
             width: 630px;
             height: 100px;
@@ -86,6 +90,26 @@
         #searchContainer{
             #search{
                 width: 551px;
+                height: 50px;
+                outline: none;
+                text-align: justify;
+                padding: 25px;
+                text-transform: capitalize;
+            }
+
+
+            #search::-webkit-input-placeholder{
+                padding-left: 40px;
+            }
+
+            #search::-webkit-search-cancel-button{
+                position:relative;
+                right:20px;  
+            
+                -webkit-appearance: auto;
+                height: 14px;
+                width: 14px;
+                background: red;
             }
 
             #suggestionBox{
@@ -121,17 +145,17 @@
 
     #trendingGifos{
         margin: auto;
-        width: 1440px;
+        width: 1024px;
         height: 640px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         .title-trending-gifos{
-            width: 1440px;
+            width: 1024px;
             font-size: 25px;
         }
         .paragraph-trending-gifos{
-            width: 1440px;
+            width: 1024px;
             height: 21px;
             font-family: "Roboto";
             font-size: 18px;
@@ -144,13 +168,93 @@
         }
         #cardsContainer{
             display: flex;
-            width: 1440px;
+            width: 1024px;
             justify-content: center;
             margin-top: 53px;
-            .img-trending-gifos{
-                width: 357px;
-                height: 275px;
-                margin: 10px;
+            
+            .carts-wrapper{
+                display: flex;
+                width: 1080px;
+                overflow: hidden;
+                justify-content: center;
+                
+
+                .img-trending-gifos{
+                    position: relative;
+                    width: 357px;
+                    height: 275px;
+
+
+                    .img-cart{
+                        display: flex;
+                        position: absolute;
+                        padding: 10px;
+                        // display: grid;
+                        height: 100%;
+                        width: 100%;
+                        transform: translateX(-200%);
+                        .img-url{
+                            height: 100%;
+                            width: 100%;
+                            position: relative;
+                        }
+                        .overlay{
+                            width: 337px;
+                            height: 255px;
+                            background-color: $burguer-menu-lines;
+                            position: absolute;
+                            text-align: end;
+                            opacity: 0;
+
+                            .fav-icon{
+                                opacity: 0.5;
+                                &:hover{
+                                    opacity: 1;
+                                }
+                            }
+                            
+                            .download-icon{
+                                opacity: 0.5;
+                                &:hover{
+                                    opacity: 1;
+                                }
+                            }
+
+                            .max-icon{
+                                opacity: 0.5;
+                                &:hover{
+                                    opacity: 1;
+                                }
+                            }
+
+                            img{
+                                margin: 5px;
+                            }
+                            &:hover{
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+
+                    .img-cart.next + .img-cart {
+                        transform: translateX(200%);
+                    }
+
+                    .img-cart.prev{
+                        transform: translateX(-100%)
+                    }
+
+                    .img-cart.current{
+                        transform: translateX(0)
+                    }
+
+                    .img-cart.next{
+                        transform: translateX(100%)
+                    }
+
+
+                }
+
             }
             .slide-left{
                 margin-right: 15px;
@@ -163,7 +267,7 @@
     }
 
     #ContainerCrearGifos{
-        width: 1440px;
+        width: 1024px;
         height: 660px;
         display: flex;
         align-items: center;
@@ -322,7 +426,7 @@
     #footer{
         display: flex;
         flex-direction: column;
-        width: 1440px;
+        width: 1024px;
         height: 116px;       
         #socialNetworksAndCopyRight{
             display: flex;
@@ -345,7 +449,7 @@
             }
         }
         #blueBarDown{
-            width: 1440px;
+            width: 1024px;
             height: 7px;
         }
     }
