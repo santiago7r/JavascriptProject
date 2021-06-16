@@ -117,6 +117,20 @@
             }
         }
 
+        .search-header{
+            margin-top: 135px;
+            margin-bottom: 55px;
+            h2{
+                font-family: 'Montserrat';
+                font-weight: bold;
+                font-size: 35px;
+                color: #572EE5;
+                text-align: center;
+                line-height: 30px;
+                text-transform: capitalize;
+            }
+        }
+
         #trending{
             #trending-block{
                 font-size: 18px;
@@ -137,6 +151,21 @@
                     height: 200px;
 
                 }
+            }
+        }
+        .out-button{
+            margin-top: 75px;
+            margin-bottom: 75px;
+            .button-ver-mas{
+                width: 127px;
+                height: 50px;
+                border: 1px solid $burguer-menu-lines;
+                border-radius: 25px;
+                color: $burguer-menu-lines;
+                font-family: "Montserrat";
+                font-weight: bold;
+                font-size: 13px;
+                background-color: white;
             }
         }
         

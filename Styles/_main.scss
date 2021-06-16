@@ -1,4 +1,7 @@
 %styles-main{
+    .hide{
+        display: none;
+    }
     text-align: -webkit-center;
     width: 375px;
     .main-title{
@@ -26,7 +29,7 @@
             width: 215px;
             height: 22px;
         }
-        #btnSearch{
+        .inputButton{
             transform: translate(-40px, 5px);
         }
     }
@@ -73,7 +76,7 @@
         }
         #suggestionBox{
             width: 551px;
-            height: 200px;
+            height: 150px;
             .suggestionDiv{
                 font-family: "Roboto";
                 font-size: 16px;
@@ -115,7 +118,7 @@
         border: 1px solid #572EE5;
         border-radius: 25px;
         color: $titles-color;
-        font: "Montserrat";
+        font-family: "Montserrat";
         font-weight: bold;
         font-size: 13px;
         span{

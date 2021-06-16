@@ -82,6 +82,10 @@
   width: 375px;
 }
 
+#searchGifos .hide, #searchGifosMobileHome .hide {
+  display: none;
+}
+
 #searchGifos .main-title, #searchGifosMobileHome .main-title {
   width: 286px;
   height: 99px;
@@ -124,7 +128,7 @@
   height: 22px;
 }
 
-#searchGifos #searchContainer #btnSearch, #searchGifosMobileHome #searchContainer #btnSearch {
+#searchGifos #searchContainer .inputButton, #searchGifosMobileHome #searchContainer .inputButton {
   -webkit-transform: translate(-40px, 5px);
           transform: translate(-40px, 5px);
 }
@@ -169,7 +173,7 @@
 
 #searchGifos #searchContainer #suggestionBox {
   width: 551px;
-  height: 200px;
+  height: 150px;
 }
 
 #searchGifos #searchContainer #suggestionBox .suggestionDiv {
@@ -222,7 +226,7 @@
   border: 1px solid #572EE5;
   border-radius: 25px;
   color: #572EE5;
-  font: "Montserrat";
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: 13px;
 }
@@ -478,6 +482,19 @@
   #searchGifos #searchContainer #suggestionBox {
     display: none;
   }
+  #searchGifos .search-header {
+    margin-top: 135px;
+    margin-bottom: 55px;
+  }
+  #searchGifos .search-header h2 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 35px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 30px;
+    text-transform: capitalize;
+  }
   #searchGifos #trending #trending-block {
     font-size: 18px;
   }
@@ -496,6 +513,21 @@
   #searchGifos .out figure img {
     width: 260px;
     height: 200px;
+  }
+  #searchGifos .out-button {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  #searchGifos .out-button .button-ver-mas {
+    width: 127px;
+    height: 50px;
+    border: 1px solid #572EE5;
+    border-radius: 25px;
+    color: #572EE5;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 13px;
+    background-color: white;
   }
   #trendingGifos {
     margin: auto;

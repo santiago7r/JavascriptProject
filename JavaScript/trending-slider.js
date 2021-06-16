@@ -71,22 +71,6 @@ document.addEventListener("DOMContentLoaded", async()=>{
           imgCart.src = trendingImgs.data[i].images.fixed_width.url;
           cartsWrapper.appendChild(cart);
           cart.appendChild(divImgCart);
-
-/*
-                    <div class="img-cart" style="display: flex;">
-                        <img class="img-cart" style="position: relative;"
-                            src="https://media1.giphy.com/media/KpS6McRMXM6Y7prlpm/200w.gif?cid=729b2bc6rd0zw97v1ugnxbmvjao7p2g2m18at3kjhg4nyr2e&amp;rid=200w.gif&amp;ct=g">
-                        <div class="overlay img-cart"
-                            style="background-color: blue; z-index: 100; opacity: 0.5; border: 2px solid red; position: absolute;">
-                            <img src="./assets/icon-fav-hover.svg" alt="">
-                            <img src="./assets/icon-download.svg" alt="">
-                            <img src="./assets/icon-max-normal.svg" alt="">
-                        </div>
-                    </div>
-**/
-
-
-
         }
 
         let elementsWrapper = document.querySelector('.img-trending-gifos').childNodes;
@@ -127,11 +111,9 @@ document.addEventListener("DOMContentLoaded", async()=>{
         const nextButton = document.querySelector('.slide-right');
 
         function startSlider(){
-            current = slider.querySelector('.current') || slides.firstElementChild;
-            prev = current.previousElementSibling || slides.lastElementChild;
-            next = current.nextElementSibling || slides.firstElementChild;
-            console.log({ current, prev, next });
-
+          current = slider.querySelector('.current') || slides.firstElementChild;
+          prev = current.previousElementSibling || slides.lastElementChild;
+          next = current.nextElementSibling || slides.firstElementChild;
         }
 
         function applyClasses() {

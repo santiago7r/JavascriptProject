@@ -4,20 +4,19 @@ const searchBtninput = document.querySelector("#btnSearch");
 
 searchInput.insertAdjacentElement('afterend', searchBtninput);
 
-searchContainer.addEventListener("keyup", function(event){
-    event.preventDefault()
-    const term = searchInput.value;
-    suggestionFunction(term); 
+searchInput.addEventListener("input", e => {
+    const term = e.target.value;
 
-    if (term === ""){
-        suggestionBox.style.display = "none";
+    if (term !== undefined && term !== ""){
+        suggestionFunction(term); 
+    }
+
+    if (term === undefined || term === ""){
     }else{
         suggestionBox.style.display = "block";
     }
 
 })
-
-
 
 function suggestionFunction (term){
     const APIKEYAUTO = "KtTod9sp8K9SJa6zIX0lrTmLeNt83TVL";
@@ -30,7 +29,7 @@ function suggestionFunction (term){
         const suggestionBox = document.getElementById("suggestionBox");
         suggestionBox.innerHTML = "";
         json.data.forEach(function(suggestion){
-            console.log(suggestion.name);
+
             const suggestionNode = document.createElement("div");
             const searchMiniLogo = document.createElement("img");
             searchMiniLogo.src ="./assets/icon-search-mod-noc.svg";
@@ -49,9 +48,7 @@ function suggestionFunction (term){
                 const searchBar = document.getElementById("search");
                 searchBar.value = suggestion.name;
                 const searchBtn = document.getElementById("btnSearch");
-                searchBtn.click();
-
-                
+                searchBtn.click();                
             })
             suggestionBox.appendChild(suggestionNode);
         });
