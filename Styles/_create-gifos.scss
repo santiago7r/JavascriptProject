@@ -1,0 +1,173 @@
+section{
+  text-align: -webkit-center;
+  #pictureOfCamera{
+    width: 123px;
+    height: 162px;
+    transform: translate(-457px, 244px);
+  }
+  .camera-light{
+    transform: translate(-460px, 230px);
+  }
+
+  #pictureOfCinta{
+    width: 142px;
+    height: 88px;
+    transform: translate(476px, -167px);
+  }
+}
+.cam-container {
+    align-items: center;
+    border: 2px solid #8759c8;
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    .screenBoxOne{
+      width: 668px;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+
+      .leftUp{
+        width: 27px;
+        height: 25px;
+        border: 1px solid $screen-border-color;
+        border-right: none;
+        border-bottom: none;
+      }
+      .rightUp{
+        width: 27px;
+        height: 25px;
+        border: 1px solid $screen-border-color;
+        border-left: none;
+        border-bottom: none;
+      }
+    }
+    .screenBosTwo{
+      width: 668px;
+      height: 70px;
+      font-family: "Montserrat";
+      font-size: 25px;
+      color: $burguer-menu-lines;
+      text-align: center;
+      line-height: 35px;
+      font-weight: bold;
+      .gifosCreateGif{
+          display: inline-block;
+          color: $screen-border-color;
+      }
+    }
+
+    .screenBoxThree{
+      width: 668px;
+      height: 135px;
+      font-family: "Roboto";
+      font-size: 16px;
+      color: #000000;
+      text-align: center;
+      line-height: 29px;
+    }
+
+    .screenBoxFour{
+      width: 668px;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      .leftDown{
+        width: 25px;
+        height: 27px;
+        border: 1px solid $screen-border-color;
+        border-top: none;
+        border-right: none;
+      }
+      .rightDown{
+        width: 25px;
+        height: 27px;
+        border: 1px solid $screen-border-color;
+        border-top: none;
+        border-left: none;
+      }
+    }
+
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    .step {
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid #8759c8;
+      color: #8759c8;
+      font: 18px Arial, sans-serif;
+      height: 36px;
+      margin-right: 15px;
+      padding: 8px;
+      text-align: center;
+      width: 36px;
+    }
+  
+    .active {
+      background: #8759c8;
+      color: #fff;
+    }
+  
+    .restart {
+      align-self: flex-end;
+      display: none;
+      text-decoration: underline;
+    }
+  }
+
+  #lineCreateGif{
+    width: 795px;
+    height: 6.9px;
+    background-color: $burguer-menu-lines;
+    border-radius: 25px;
+    margin-top: 19px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+
+    .start{
+      width: 127px;
+      height: 50px;
+      border-radius: 25px;
+      border: 1px solid $burguer-menu-lines;
+      background-color: white;
+      margin-top: 20px;
+      font-family: "Montserrat";
+      font-weight: bold;
+      font-size: 13px;
+      color: $burguer-menu-lines;
+      letter-spacing: 0;
+      text-align: center;
+    }
+      
+    .record,
+    .stop,
+    .upload {
+      display: none;
+      width: 127px;
+      height: 50px;
+      border-radius: 25px;
+      border: 1px solid $burguer-menu-lines;
+      background-color: white;
+      margin-top: 20px;
+      font-family: "Montserrat";
+      font-weight: bold;
+      font-size: 13px;
+      color: $burguer-menu-lines;
+      letter-spacing: 0;
+      text-align: center;
+
+    }
+  }

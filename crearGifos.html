@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
     <title>Crear gifos</title>
 </head>
 
@@ -42,40 +43,41 @@
     </header>
 
     <main id="mainCrearGifos">
-        <div id="ContainerCrearGifos">
+        <section>
             <img src="./assets/camara.svg" id="pictureOfCamera">
             <img src="./assets/Path 2.svg" alt="Camera Light" class="camera-light">
-
-            <div id="screenLineAndBtn">
-                <div id="screen">
-                    <div class="screenBoxOne">
-                        <span class="leftUp"></span>
-                        <span class="rightUp"></span>
-                    </div>
-                    <h2 class="screenBosTwo">Aquí podrás <br>crear tus propios <span class="gifosCreateGif">GIFOS</span>
-                    </h2>
-                    <p class="screenBoxThree">¡Crea tu GIFO en sólo 3 pasos! <br>(sólo necesitas una cámara para
-                        grabar un video)</p>
-                    <div class="screenBoxFour">
-                        <span class="leftDown"></span>
-                        <span class="rightDown"></span>
-
-                    </div>
+            <div role="Record camera container" class="cam-container">
+                <div class="screenBoxOne">
+                    <span class="leftUp"></span>
+                    <span class="rightUp"></span>
                 </div>
-                <div id="stepsLineAndBtns">
-                    <div class="stepsCreateGif">
-                        <span class="steps">1</span>
-                        <span class="steps">2</span>
-                        <span class="steps">3</span>
-                    </div>
-                    <div id="lineCreateGif"></div>
-                    <button id="btnCreateGif">COMENZAR</button>
+                <h1 id="title" class="screenBosTwo">Aquí podrás <br>crear tus propios <span
+                        class="gifosCreateGif">GIFOS</span></h1>
+                <img id="display-container" />
+                <p id="description" class="screenBoxThree">¡Crea tu GIFO en sólo 3 pasos! <br>(sólo necesitas una cámara
+                    para
+                    grabar un video)</p>
+                <div class="screenBoxFour">
+                    <span class="leftDown"></span>
+                    <span class="rightDown"></span>
                 </div>
             </div>
-
+            <div class="steps">
+                <span class="step" id="step-1">1</span>
+                <span class="step" id="step-2">2</span>
+                <span class="step">3</span>
+                <span class="timer" id="timer"></span>
+                <button class="restart" id="restart">Repetir Captura</button>
+            </div>
+            <div id="lineCreateGif"></div>
+            <div class="actions">
+                <button class="start" id="action-start">Comenzar</button>
+                <button class="record" id="action-record">Grabar</button>
+                <button class="stop" id="action-stop">Deterner</button>
+                <button class="upload" id="action-upload">Subir</button>
+            </div>
             <img src="./assets/pelicula.svg" id="pictureOfCinta">
-        </div>
-
+        </section>
     </main>
 
     <footer id="footer">
@@ -93,8 +95,7 @@
         </div>
         <div id="blueBarDown"></div>
     </footer>
-
-
+    <script src="./JavaScript/createGifos.js"></script>
 </body>
 
 </html>

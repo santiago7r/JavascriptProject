@@ -318,6 +318,216 @@
   height: 275px;
 }
 
+section {
+  text-align: -webkit-center;
+}
+
+section #pictureOfCamera {
+  width: 123px;
+  height: 162px;
+  -webkit-transform: translate(-457px, 244px);
+          transform: translate(-457px, 244px);
+}
+
+section .camera-light {
+  -webkit-transform: translate(-460px, 230px);
+          transform: translate(-460px, 230px);
+}
+
+section #pictureOfCinta {
+  width: 142px;
+  height: 88px;
+  -webkit-transform: translate(476px, -167px);
+          transform: translate(476px, -167px);
+}
+
+.cam-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #8759c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 390px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 720px;
+}
+
+.cam-container .screenBoxOne {
+  width: 668px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cam-container .screenBoxOne .leftUp {
+  width: 27px;
+  height: 25px;
+  border: 1px solid #50E3C2;
+  border-right: none;
+  border-bottom: none;
+}
+
+.cam-container .screenBoxOne .rightUp {
+  width: 27px;
+  height: 25px;
+  border: 1px solid #50E3C2;
+  border-left: none;
+  border-bottom: none;
+}
+
+.cam-container .screenBosTwo {
+  width: 668px;
+  height: 70px;
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.cam-container .screenBosTwo .gifosCreateGif {
+  display: inline-block;
+  color: #50E3C2;
+}
+
+.cam-container .screenBoxThree {
+  width: 668px;
+  height: 135px;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  line-height: 29px;
+}
+
+.cam-container .screenBoxFour {
+  width: 668px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cam-container .screenBoxFour .leftDown {
+  width: 25px;
+  height: 27px;
+  border: 1px solid #50E3C2;
+  border-top: none;
+  border-right: none;
+}
+
+.cam-container .screenBoxFour .rightDown {
+  width: 25px;
+  height: 27px;
+  border: 1px solid #50E3C2;
+  border-top: none;
+  border-left: none;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+.steps .step {
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #8759c8;
+  color: #8759c8;
+  font: 18px Arial, sans-serif;
+  height: 36px;
+  margin-right: 15px;
+  padding: 8px;
+  text-align: center;
+  width: 36px;
+}
+
+.steps .active {
+  background: #8759c8;
+  color: #fff;
+}
+
+.steps .restart {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: none;
+  text-decoration: underline;
+}
+
+#lineCreateGif {
+  width: 795px;
+  height: 6.9px;
+  background-color: #572EE5;
+  border-radius: 25px;
+  margin-top: 19px;
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.actions .start {
+  width: 127px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #572EE5;
+  background-color: white;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 13px;
+  color: #572EE5;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.actions .record,
+.actions .stop,
+.actions .upload {
+  display: none;
+  width: 127px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #572EE5;
+  background-color: white;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 13px;
+  color: #572EE5;
+  letter-spacing: 0;
+  text-align: center;
+}
+
 #footer {
   width: 375px;
   height: 196px;
@@ -1320,20 +1530,6 @@
     background-color: #572EE5;
     border-radius: 25px;
     margin-top: 19px;
-  }
-  #ContainerCrearGifos #screenLineAndBtn #stepsLineAndBtns #btnCreateGif {
-    width: 127px;
-    height: 50px;
-    border-radius: 25px;
-    border: 1px solid #572EE5;
-    background-color: white;
-    margin-top: 20px;
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 13px;
-    color: #572EE5;
-    letter-spacing: 0;
-    text-align: center;
   }
   #ContainerCrearGifos #pictureOfCinta {
     width: 142px;
