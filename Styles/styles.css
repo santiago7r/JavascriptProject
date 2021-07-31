@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+.dark-mode {
+  background-color: #37383C;
+  color: white;
+}
+
 .header #blueBar {
   width: 375px;
   height: 5px;
