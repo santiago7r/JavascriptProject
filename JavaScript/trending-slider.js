@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", async()=>{
 
         const slideRight = document.createElement("img");
         slideRight.classList.add("slide-right");
-        slideRight.src = './assets/button-slider-right.svg';
+        slideRight.src = './assets/Button-Slider-right.svg';
 
         cartsContainer.insertAdjacentElement('afterbegin', slideLeft);
         cartsContainer.insertAdjacentElement('beforeend', slideRight);

@@ -1,6 +1,7 @@
 
 const APIKEY = "KtTod9sp8K9SJa6zIX0lrTmLeNt83TVL";
 let SEARCHOFFSET = 0;
+let LIMITVALUE = 12;
 
 document.addEventListener("DOMContentLoaded", init);
 
@@ -16,9 +17,10 @@ const toggleButtons = e => {
   }
 }
 
-const renderGrid = (ev) => { 
+const renderGrid = (ev, sholdClearContent = true) => { 
   ev.preventDefault();
   let str = document.getElementById("search").value.trim();
+  console.log("Value of STR111111", str)
   
   toggleButtons({
     target:{
@@ -26,7 +28,11 @@ const renderGrid = (ev) => {
     }
   });
 
-  let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&offset=${SEARCHOFFSET}&limit=12&q=${str}`;
+  if(sholdClearContent){
+    out.innerHTML ="";
+  }
+
+  let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&offset=${SEARCHOFFSET}&limit=${LIMITVALUE}&q=${str}`;
 
   fetch(url)
     .then(response => response.json())
@@ -53,35 +59,34 @@ const renderGrid = (ev) => {
         suggestionBox.style.display = "none";
         
       });
-      console.log(content.data);
-      console.log(content.data[10]);
 
       let elimiteBtn = document.querySelector('#out-button'); 
       elimiteBtn.innerHTML = "";
 
 
+      const doesButtonVerMasExist = document.getElementById("button-ver-mas");
 
-      let buttonVerMas = document.createElement("button");
-      buttonVerMas.id = "button-ver-mas";
-      buttonVerMas.classList.add('button-ver-mas');
-      buttonVerMas.innerText ="VER MÁS";        
-      elimiteBtn.appendChild(buttonVerMas);
+      if(doesButtonVerMasExist === null){
 
-
-
-      const suggestionBox = document.getElementById("suggestionBox");
-      suggestionBox.innerHTML = "";
-
-      let eliminateTrending = document.querySelector("#trending");
-      eliminateTrending.style.display ="none";
-
-
-      buttonVerMas.addEventListener('click', (e)=>{
-        SEARCHOFFSET += 12;
-        renderGrid(e);
-        console.log("Boton ver más");
-      })
-
+        let buttonVerMas = document.createElement("button");
+        buttonVerMas.id = "button-ver-mas";
+        buttonVerMas.classList.add('button-ver-mas');
+        buttonVerMas.innerText ="VER MÁS";        
+        elimiteBtn.appendChild(buttonVerMas);
+        
+        const suggestionBox = document.getElementById("suggestionBox");
+        suggestionBox.innerHTML = "";
+  
+        let eliminateTrending = document.querySelector("#trending");
+        eliminateTrending.style.display ="none";
+  
+  
+        buttonVerMas.addEventListener('click', (e)=>{
+          SEARCHOFFSET += 12;
+          renderGrid(e, false);
+        })
+        
+      }
 
     })
     .catch(err => {
@@ -93,6 +98,9 @@ function init() {
   let btnSearch = document.getElementById("btnSearch");
   let btnSearchClose = document.getElementById("btnSearchClose");
   let InputSearch =  document.getElementById("search");
+  let str = document.getElementById("search").value.trim();
+  
+  console.log("Value of STR2222", str)
 
   btnSearch.addEventListener("click", renderGrid );
 
